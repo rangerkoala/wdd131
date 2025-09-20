@@ -8,10 +8,158 @@
     --body-font: "Raleway", sans-serif;
 }
 
-span header{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--back-color);
+    color: var(--primary-color);
+}
+
+header {
+    font-family: var(--heading-font);
+    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+    padding-top: 1rem;
+}
+
+header, p{
     display: block;
+}
+
+#course-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
 }
 
 nav {
     display: flex;
+    justify-content: space-evenly;
+    background-color: var(--accent2-color);
+    padding: 0.5rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    align-items: stretch;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    background: var(--primary-color);
+    color: white;
+    margin: -2rem -2rem 1rem -2rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 10px 10px 0 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me {
+    position: relative;
+}
+
+.about-me img {
+    float: right;
+    margin-left: 1rem;
+    border-radius: 8px;
+}
+
+.about-me p {
+    text-align: justify;
+    padding: 1rem 0;
+}
+
+.country-info {
+    margin-top: 2rem;
+}
+
+.card h3 {
+    font-family: var(--heading-font);
+    margin: 1rem 0;
+    border-bottom: 1px solid var(--accent2-color);
+    padding-bottom: 0.5rem;
+}
+
+.country-details {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.country-flag img {
+    border-radius: 5px;
+}
+.country-flag p{
+    text-align: center;
+    font-style: italic;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding: 0.5rem 1rem;
+}
+
+.card li {
+    margin: 1rem 0;
+}
+
+.card a {
+    color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: block;
+}
+
+.card li a:hover {
+    background-color: rgba(0, 48, 73, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    margin-top: 3rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
 }

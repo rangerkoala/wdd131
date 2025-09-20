@@ -7,6 +7,7 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Sebastian Plazas</title>
     <meta name="description" content="Sebastian Plazas | This is the homepage created as part of the course WDD131-Dynamic Web Fundamentals">
     <meta name="author" content="Sebastian Plazas">
+    <script src="scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
@@ -23,21 +24,22 @@
         </nav>
     </header>
     <main>
-        <h1>Sebastian Plazas</h1>
         <section class="card">
             <h2>About Me</h2>
-            <div>
+            <div class="about-me">
+                <img src="images/profile-pic.jpg" alt="profile picture" width="120">
                 <p>My name is Sebastian Plazas. I was born in Colombia and live with my family in Colombia. I'm a Software Development student, and I also have a certificate in Social Media Marketing. I like to learn new things and spend time with my family.</p>
-                <img src="" alt="">
             </div>
-            <div>
+            <div class="country-info">
                 <h3>Bogota, Colombia</h3>
-                <div>
-                    <img src="" alt="">
-                    <p>Official Flag of Colombia</p>
-                </div>
-                <div>
-                    <p>Colombia, officially the Republic of Colombia, is a country primarily located in South America with insular regions in North America. Colombia is one of the world's seventeen megadiverse countries; it has the highest level of biodiversity per square mile in the world and the second-highest level overall. Its territory encompasses Amazon rainforest, highlands, grasslands and deserts. </p>
+                <div class="country-details">
+                    <div class="country-flag">
+                        <img src="images/colombia-flag.png" alt="Colombia Flag" width="150">
+                        <p>Official Flag of Colombia</p>
+                    </div>
+                    <div class="country-description">
+                        <p>Colombia, officially the Republic of Colombia, is a country primarily located in South America with insular regions in North America. Colombia is one of the world's seventeen megadiverse countries; it has the highest level of biodiversity per square mile in the world and the second-highest level overall. Its territory encompasses Amazon rainforest, highlands, grasslands and deserts. </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,7 +56,7 @@
         </section>
     </main>
     <footer>
-        <p>©️<span id="currentyear"></span> 👽 Sebastian Plazas 👽 Bogota, Colombia</p>
+        <p>©<span id="currentyear">2025</span> 👽 Sebastian Plazas 👽 Bogota, Colombia</p>
         <p id="lastModified"></p>
     </footer>
 </body>
