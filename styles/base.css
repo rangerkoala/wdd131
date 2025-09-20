@@ -25,7 +25,7 @@ header {
     color: white;
     text-align: center;
     background-color: var(--primary-color);
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 header, p{
@@ -33,9 +33,12 @@ header, p{
 }
 
 #course-title {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
+}
+
+#student-name {
+    color: #ffd700
 }
 
 nav {
@@ -43,6 +46,7 @@ nav {
     justify-content: space-evenly;
     background-color: var(--accent2-color);
     padding: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 nav a {
