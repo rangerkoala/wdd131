@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: auto;
 }
 
 body {
@@ -68,6 +69,11 @@ main {
     gap: 2rem;
     grid-template-columns: 2fr 1fr;
     align-items: stretch;
+}
+
+h1 {
+    position: absolute;
+    overflow: hidden;
 }
 
 .card {
