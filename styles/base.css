@@ -1,0 +1,17 @@
+:root{
+    --primary-color: #003049; 
+    --secondary-color: #d62828; 
+    --accent1-color: #f77f00; 
+    --accent2-color: #fcbf49; 
+    --back-color: #eae2b7;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Raleway", sans-serif;
+}
+
+span header{
+    display: block;
+}
+
+nav {
+    display: flex;
+}
