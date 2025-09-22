@@ -86,9 +86,8 @@ main {
     padding: 1rem;
 }
 
-h1 {
+h1, h2{
     font-family: var(--heading-font);
-    font-size: 2rem;
     text-align: center;
     margin: 2rem 0;
 }
@@ -130,5 +129,5 @@ footer {
 }
 
 footer p {
-    margin-bottom: 0.5rem 0;
+    margin-bottom: 0.5rem;
 }
