@@ -1,0 +1,23 @@
+@media (min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
