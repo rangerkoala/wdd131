@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+    .card {
+        position: absolute;
+        margin: 0;
+        width:auto;
+        background:rgba(255,255,255,.78);
+        border:1px solid rgba(0,0,0,.10);
+        box-shadow:0 10px 24px rgba(0,0,0,.16);
+        padding:1rem 1.1rem 1rem;
+        overflow:visible;       
+        z-index:2;              
+    }
+
+    .data{ 
+        top:20%; 
+        left:4%; 
+        max-width:430px; 
+    }
+    .weather{ 
+        right:4%; 
+        bottom: 10%;
+        max-width:360px; }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .card h2 {
+        max-width: 150px;
+        margin: 0;
+        background-color: var(--secondary-color);
+        color: var(--back-color);
+        transform: translateX(calc(-1 * 30px));
+    }
+
+    #weather-title::after {
+        content: " ⛅";
+    }
+}

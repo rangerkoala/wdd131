@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia | Country Page</title>
+    <meta name="description" content="Learn more about Colombia, a country in South America.">
+    <meta name="author" content="Sebastian Plazas">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Colombia</h1>
+        <div class="accent-bar"></div>
+    </header>
+    <main>
+        <section class="content">
+            <picture class="hero-image">
+                <source srcset="images/colombia-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/colombia-medium.webp" media="(min-width: 768px)">
+                <img src="images/colombia-small.webp" alt="A scenic view of Colombia">
+            </picture>
+            <div class="data card">
+                <h2>Data</h2>
+                <ul class="info-list">
+                    <li><span class="col1">Area:</span><span class="col2">1,141,748 km2</span></li>
+                    <li><span class="col1">Population:</span><span class="col2">52,695,952</span></li>
+                    <li><span class="col1">Capital:</span><span class="col2">Bogota</span></li>
+                    <li><span class="col1">Languages:</span><span class="col2">Spanish, 60+ regional languages</span></li>
+                    <li><span class="col1">Currency:</span><span class="col2">Colombian peso (COP)</span></li>
+                    <li><span class="col1">Time Zone:</span><span class="col2">UTC−5</span></li>
+                    <li><span class="col1">Calling Code:</span><span class="col2">+57</span></li>
+                    <li><span class="col1">Internet TLD:</span><span class="col2">.co</span></li>
+                </ul>
+            </div>
+            <div class="weather card">
+                <h2 id="weather-title">Weather</h2>
+                <figure class="weather-icon">
+                    <img src="images/weather_icon.svg" alt="weather icon">
+                </figure>
+                <ul class="info-list">
+                    <li><span class="col1">Temperature:</span><span class="col2"><span id="temp-value">16</span> °C</span></li>
+                    <li><span class="col1">Conditions</span><span class="col2">Scattered clouds</span></li>
+                    <li><span class="col1">Wind:</span><span class="col2"><span id="wind-value">13</span> km/h</span></li>
+                    <li><span class="col1">Wind Chill</span><span class="col2"><span id="wind-chill"></span></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> 👽 Sebastian Plazas 👽 Bogota, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
