@@ -1,0 +1,53 @@
+:root{
+    --primary-color: #006d77; 
+    --secondary-color: #83c5be; 
+    --accent1-color: #ffddd2; 
+    --accent2-color: #e29578; 
+    --back-color: #edf6f9;
+    --heading-font: "Vollkorn SC", serif;
+    --body-font: "PT Sans", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--back-color);
+ 
+}
+
+p, li{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--heading-font);
+    padding: 1rem 2rem;
+    display: block;
+    text-align: center;
+}
+
+section {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: white;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
