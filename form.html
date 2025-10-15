@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form for WDD131 week 5 assignment">
+    <meta name="author" content="Sebastian Plazas">
+    <title>Product Review Form | Sebastian Plazas | WDD131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+        <fieldset>
+            <legend>Product Name</legend>
+            <select name="productName" id="productName" required aria-label="Product Name">
+            <option value="" disabled selected>Choose a Product...</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <label class="radio-group"><input type="radio" name="stars" id="onestar" value="1" required>☆</label>
+            <label class="radio-group"><input type="radio" name="stars" id="twostars" value="2" required>☆☆</label>
+            <label class="radio-group"><input type="radio" name="stars" id="threestars" value="3" required>☆☆☆</label>
+            <label class="radio-group"><input type="radio" name="stars" id="fourstars" value="4" required>☆☆☆☆</label>
+            <label class="radio-group"><input type="radio" name="stars" id="fivestars" value="5" required>☆☆☆☆☆</label>
+        </fieldset>
+        <fieldset>
+            <legend>Date of Installation</legend>
+            <input type="date" name="installationDate" required aria-label="Date of Installation">
+        </fieldset>
+        <fieldset>
+            <legend>Which features did you find useful in the product? <br><em>(Check all that apply)</em></legend>
+            <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+            <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+        </fieldset>
+        <fieldset>
+            <legend>Written Review (Optional)</legend>
+            <textarea name="review" id="review" aria-label="Written Review (Optional)"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Your Name (optional)</legend>
+            <input type="text" name="username" id="username" aria-label="Your Name (optional)">
+        </fieldset>
+        <input type="submit" value="Post Review" id="btnSubmit">
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span>👽 Sebastian Plazas 👽 Bogota, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
