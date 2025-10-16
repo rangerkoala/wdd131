@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Site plan for JossiPhotos, a photography business">
+    <meta name="author" content="Sebastian Plazas">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn+SC:wght@900&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/jossiphotos_marcablanco.png" alt="logo" width="100" loading="lazy">
+            <button class="hamburger" aria-label="Toggle navigation menu">☰</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div id="header-contact" class="button-container">
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <picture class="hero-image">
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 768px)">
+                <img src="images/hero-small.webp" alt="JossiPhotos hero image" loading="lazy">
+            </picture>
+            <div class="hero card">
+                <h1>JossiPhotos</h1>
+                <h3>Event Fotography</h3>
+                <P>Our goal is to capture the best moments of your big day to last forever in professional-quality photos and videos. We want you to enjoy your wedding knowing that we will take care of immortalizing those beautiful memories.</P>
+                <div class="button-container">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div> 
+        </section>
+        <section class="welcome">
+            <h2>Welcome, I'm Jossiana</h2>
+            <div>
+                <p>With more than 5 years of experience with Wedding Photography, we not only guarantee to provide you with an excellent service, but also to advise, guide and help you to release a bit of the stress of that day. With small meetings prior to the wedding we will coordinate everything necessary so that your memories of that day are perfect.</p>
+                <img src="images/profilejossi.jpg" alt="profile" width="250" loading="lazy">
+            </div>
+        </section>
+        <section class="services">
+            <h2>What We Do</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="images/wedding1.jpg" width="300" alt="weddings" loading="lazy">
+                    <h3>Weddings</h3>
+                </div>
+                <div class="service-card">
+                    <img src="images/proposal1.jpg" width="300" alt="proposals" loading="lazy">
+                    <h3>Proposals</h3>
+                </div>
+                <div class="service-card">
+                    <img src="images/quince1.jpg" width="300" alt="quinceañeros" loading="lazy">
+                    <h3>Quinceañeros</h3>
+                </div>
+            </div>
+            <div class="button-container">
+            <a href="gallery.html">See More</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> JossiPhotos | Web by Sebastian Plazas | Bogota, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

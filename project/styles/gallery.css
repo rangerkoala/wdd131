@@ -1,0 +1,73 @@
+:root{
+    --primary-color: #006d77; 
+    --secondary-color: #83c5be; 
+    --accent1-color: #ffddd2; 
+    --accent2-color: #e29578; 
+    --back-color: #edf6f9;
+    --heading-font: "Vollkorn SC", serif;
+    --body-font: "PT Sans", sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.gallery-title {
+    display: block;
+    justify-items: center;
+}
+
+#gallery-menu {
+    display: flex;
+    padding-bottom: 1.5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery-menu a{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding-top: 0.5rem;
+}
+
+#gallery-menu a:hover {
+    color: var(--accent2-color);
+}
+
+.gallery {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.gallery div {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery div:hover {
+        transform: scale(1.1);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
